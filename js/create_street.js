@@ -19,6 +19,7 @@ $(document).ready(function () {
         },
         submitHandler: function () {
             submitData();
+            window.location.replace('http://localhost/street_manager/client/list.html');
         }
     });
 
