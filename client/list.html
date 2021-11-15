@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Danh sách đường</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="http://localhost/street_manager/css/main.css">
+</head>
+<body>
+<div class="container">
+    <div class="filter mt-5">
+        <form action="#" method="post" name="filter-form">
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <select class="form-control" name="district_id" id="district">
+                    </select>
+                </div>
+                <div class="col-md-2">
+                </div>
+                <div class="form-group col-md-7">
+                    <input class="form-control" type="text" name="keyword" placeholder="Lọc theo tên đường"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="text-center mt-5">
+        <h3>Danh sách đường</h3>
+    </div>
+    <div class="row pt-5">
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th class="col1" scope="col">Tên đường</th>
+                <th class="col2" scope="col">Trạng thái</th>
+                <th class="col3" scope="col">Quận</th>
+                <th class="col4" scope="col">Ngày thành lập</th>
+                <th class="col5" scope="col">Mô tả</th>
+            </tr>
+            </thead>
+            <tbody id="item">
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="http://localhost/street_manager/js/list_street.js"></script>
+</body>
+</html>
